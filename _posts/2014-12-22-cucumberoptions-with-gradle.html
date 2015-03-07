@@ -1,0 +1,26 @@
+---
+layout: post
+title: cucumber.options with gradle
+date: '2014-12-22T14:41:00.001-08:00'
+author: Daniel Siwiec
+tags:
+modified_time: '2014-12-22T14:47:21.032-08:00'
+blogger_id: tag:blogger.com,1999:blog-6540655810013752940.post-8042706898844927269
+blogger_orig_url: http://blogtestrelease.blogspot.com/2014/12/cucumberoptions-with-gradle.html
+---
+
+So, to make Gradle work like the maven:
+
+{% highlight bash %}mvn test -Dcucumber.options="..."{% endhighlight %}
+
+you have to do some extra magic. When Gradle forks a new process dedicated for tests it doesn't automatically forward the original system properties. In order to achieve this, the following needs to be added:
+
+{% highlight groovy %}
+test {systemProperties = System.properties}
+{% endhighlight %}
+
+It took me a couple hours to figure it out, so here ya go! If you have multiple test tasks, you can also do it in one stab:
+
+{% highlight groovy %}tasks.withType(Test) {systemProperties = System.properties}{% endhighlight %}
+
+For a full working example check out my <a href="https://github.com/danielsiwiec/cucumber-java-skeleton">fork</a> of cucumber-java-skeleton, adding gradle support.
