@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One-liner GitHub page spin-up
+title: 'gh-deploy: One-liner GitHub page spin-up'
 author: Daniel Siwiec
 tags:
   - github
@@ -8,7 +8,8 @@ tags:
 ---
 
 Sometimes, you just need to host a simple, static HTML page on the web. GitHub makes
-it much easier, with the introduction of the [GitHub Pages](https://pages.github.com/) service. This module leverages this service and automates the whole setup.
+it much easier, with the introduction of the [GitHub Pages](https://pages.github.com/) service. There's still a couple steps required to get started with GitHub pages.
+Introducing **gh-deploy**. This module leverages this service and automates the whole setup.
 
 
 ## Prerequisites
@@ -53,3 +54,11 @@ Checkout the demos on YouTube:
 <a href="http://youtu.be/vJlg-0y2fTY" target="_blank">Part I - Hello World (19 seconds)</a> (a little outdated - there are no input arguments anymore - the wizard asks about them)
 
 <a href="http://youtu.be/5stwAqtgWTg" target="_blank">Part II - Deploy Todo MVC (36 seconds)</a>
+
+
+## Resources
+
+[gh-deploy on GitHub](https://github.com/danielsiwiec/gh-deploy)
+
+
+[gh-deploy on npmjs](https://www.npmjs.com/package/gh-deploy)
