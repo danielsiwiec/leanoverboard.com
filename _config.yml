@@ -1,11 +1,11 @@
 # Site settings
 title: Blog-Test-Release
 email: daniel.siwiec@gmail.com
-description: Coding blog...
+description: A coding blog...
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+github_username:  danielsiwiec
 
 # Build settings
 markdown: kramdown

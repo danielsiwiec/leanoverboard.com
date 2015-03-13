@@ -5,6 +5,9 @@ author: Daniel Siwiec
 tags:
   - github
   - pages
+  - npm
+  - node
+  - coffeescript
 ---
 
 Sometimes, you just need to host a simple, static HTML page on the web. GitHub makes
