@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'AWS Ruby SDK v2: Client vs Resource'
-author: Daniel Siwiec
 tags:
   - aws
   - amazon

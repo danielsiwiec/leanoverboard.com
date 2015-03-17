@@ -9,3 +9,12 @@ github_username:  danielsiwiec
 
 # Build settings
 markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+      author: Daniel Siwiec
+      layout: "post"

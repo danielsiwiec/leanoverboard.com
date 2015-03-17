@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'gh-deploy: One-liner GitHub page spin-up'
-author: Daniel Siwiec
 tags:
   - github
   - pages
