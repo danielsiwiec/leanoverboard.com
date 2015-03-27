@@ -2,7 +2,6 @@
 title: 'gh-deploy: One-liner GitHub page spin-up'
 tags:
   - github
-  - pages
   - npm
   - node
   - coffeescript
