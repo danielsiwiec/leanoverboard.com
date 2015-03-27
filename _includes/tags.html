@@ -1,7 +1,7 @@
 {% if page.tags.size > 0 %}
   {% for post_tag in page.tags %}
     {% capture tags_content %}{{ tags_content }}
-      <i class='glyphicon glyphicon-tag'></i>{{ post_tag }}&nbsp
+      <a href='/tags?tagName={{ post_tag }}'><i class='glyphicon glyphicon-tag'></i>{{ post_tag }}</a>&nbsp
     {% endcapture %}
   {% endfor %}
 {% else %}
