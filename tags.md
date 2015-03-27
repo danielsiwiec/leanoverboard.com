@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Tags
 permalink: /tags/
 ---
 
-<h1>Articles by tag: <span id='tagName'></span></h1>
+<h1>Articles for <i class='glyphicon glyphicon-tag'></i> <span id='tagName'></span></h1>
 <ul class="post-list">
   {% for post in site.posts %}
     <li class='post hidden {{ post.tags | join: " " }}'>
