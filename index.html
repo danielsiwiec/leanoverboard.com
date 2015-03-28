@@ -4,13 +4,30 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% include postListItem.html %}
-      </li>
-    {% endfor %}
-  </ul>
+  <div class='row'>
+  <div class='col-sm-8'>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          {% include postListItem.html %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class='col-sm-3 col-sm-offset-1'>
+    <div>
+      <h4>Tag cloud</h4>
+      <ul class="tags">
+      {% for tag in site.tags %}
+        {% assign tagName = tag | first | downcase | replace:" ","-" %}
+        {% assign posts = tag | last %}
+        <li>{% include tag.html %}({{ posts | size }})</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
