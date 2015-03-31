@@ -1,7 +1,7 @@
 {% if page.tags.size > 0 %}
   {% for tagName in page.tags %}
     {% capture tags_content %}{{ tags_content }}
-      {% include tag.html %}&nbsp
+      {% include tag.html %}
     {% endcapture %}
   {% endfor %}
 {% else %}

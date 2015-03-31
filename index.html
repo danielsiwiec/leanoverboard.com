@@ -17,13 +17,7 @@ layout: default
   <div class='col-sm-3 col-sm-offset-1'>
     <div>
       <h4>Tags</h4>
-      <ul class="tags">
-      {% for tag in site.tags %}
-        {% assign tagName = tag | first | downcase | replace:" ","-" %}
-        {% assign posts = tag | last %}
-        <li>{% include tag.html %}({{ posts | size }})</li>
-      {% endfor %}
-      </ul>
+      {% include tagCloud.html %}
     </div>
   </div>
 </div>

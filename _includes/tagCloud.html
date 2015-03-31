@@ -1,0 +1,7 @@
+<ul class="tags">
+{% for tag in site.tags %}
+  {% assign tagName = tag | first | downcase %}
+  {% assign postsCount = tag | last | size %}
+  <li>{% include tag.html %}({{ postsCount }})</li>
+{% endfor %}
+</ul>
