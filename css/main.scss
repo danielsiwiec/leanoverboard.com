@@ -68,7 +68,7 @@ ul.tags {
 
 .site-title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .site-title a, .site-title a:visited {
@@ -81,6 +81,13 @@ ul.tags {
 .site-title a:hover {
   text-decoration: none;
   color: #000;
+}
+
+.site-subtitle {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 80%;
+  font-weight: bold;
 }
 
 .post-list a {
