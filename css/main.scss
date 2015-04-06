@@ -11,11 +11,16 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$heading-font-size: $base-font-size * 3;
+$heading-height: 250px;
+
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #C7AF81;
 $brand-color:      #2a7ae2;
+$background-text-color: #fff;
+$background-text-hover-color: #000;
 
 $grey-color:       #353232;
 $grey-color-light: lighten($grey-color, 40%);
@@ -63,31 +68,38 @@ ul.tags {
 }
 
 .site-header {
-  background: url("../assets/bg.jpg") no-repeat fixed;
-  min-height: 350px;
+  min-height: $heading-height;
+}
+
+.page-content .wrapper {
+  background-color: $background-color;
 }
 
 .site-title {
   text-align: center;
-  margin-top: 100px;
+  margin-top: $heading-height * 0.25;
 }
 
 .site-title a, .site-title a:visited {
-  color: #fff;
+  color: $background-text-color;
   font-weight: bold;
-  font-size: 180%;
+  font-size: $heading-font-size;
   letter-spacing: 5px;
+}
+
+.site-footer a, .site-footer a:visited, .site-footer i {
+  color: $background-text-color;
 }
 
 .site-title a:hover {
   text-decoration: none;
-  color: $text-color;
+  color: $background-text-hover-color;
 }
 
 .site-subtitle {
-  color: #fff;
+  color: $background-text-color;
   letter-spacing: 3px;
-  font-size: 80%;
+  font-size: $heading-font-size * 0.5;
   font-weight: bold;
 }
 
@@ -96,7 +108,7 @@ ul.tags {
 }
 
 .page-link, .page-link:visited {
-  color: #fff;
+  color: $background-text-color;
 }
 
 .post-excerpt {
