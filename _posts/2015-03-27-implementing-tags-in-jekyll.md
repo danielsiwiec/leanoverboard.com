@@ -5,33 +5,23 @@ tags:
   - javascript
 ---
 
-When you're considering [Jekyll](http://jekyllrb.com/) as your blogging platform,
-you'll soon discover it's **tags** support is not complete.
+When you're considering [Jekyll](http://jekyllrb.com/) as your blogging platform, you'll soon discover it's **tags** support is not complete.
 
 ### Problem statement
 
-Tag feature basically consists of three abilities: a) adding tags to posts,
-b) displaying all tags, with posts count and c) browsing posts by tag.
+Tag feature basically consists of three abilities: **a)** adding tags to posts, **b)** displaying all tags, with posts count **and c)** browsing posts by tag.
 
-As Jekyll has a built-in support for adding metadata to posts, with tags being part of it,
-the first two requirements are met by rendering the metadata. The last feature however, requires
-the content to be dynamically generated (e.g. displaying all tags).
+As Jekyll has a built-in support for adding metadata to posts, with tags being part of it, the first two requirements are completed by rendering the metadata. The last feature however, requires the content to be dynamically generated (e.g. displaying all tags).
 
-Typically, the server stores posts in a database, along with the tags. Upon request,
-a page with a list of post for a certain tag can be generated, either on the server
-(e.g. JSP) or client-side, with MVC frameworks, like Angular.JS or Ember.JS.
+Typically, the server stores posts in a database, along with the tags. Upon request, a page with a list of post for a certain tag can be generated, either on the server (e.g. JSP) or client-side, with MVC frameworks, like Angular.JS or Ember.JS.
 
-Jekyll, on the other hand. is a static page generator, which means the content is pre-generated
-and the pages are server 'as-is'. A dynamic page, like a list of post for a tag, can't be
-thus generated on demand. In this post, I'll show one way of making up for this shortcoming.
+Jekyll, on the other hand. is a static page generator, which means the content is pre-generated and the pages are server 'as-is'. A dynamic page, like a list of post for a tag, can't be thus generated on demand. In this post, I'll show one way of making up for this shortcoming.
 
 ### Displaying tags on a post
 
-<p>First off, let's knock the easy part out: displaying post's tags, with desired
-outcome looking like this: {% include tags.html %}</p>
+<p>First off, let's knock the easy part off: displaying post's tags, with desired outcome looking like this: {% include tags.html %}</p>
 
-As mentioned previously, Jekyll stores tags in post's metadata, so displaying it
-is as easy as accessing it:
+As mentioned previously, Jekyll stores tags in post's metadata, so displaying it is as easy as accessing it:
 
 {% highlight liquid %}
 {% raw %}
@@ -120,7 +110,6 @@ $('#tagName').text(tagName);
 {% endraw %}
 {% endhighlight %}
 
-That's all! There are other ways of adding tag support to Jekyll. A different approach
-generating all tag pages up-front, upon deployment is described [here](http://charliepark.org/tags-in-jekyll/)
+That's all! There are other ways of adding tag support to Jekyll. A different approach generating all tag pages up-front, upon deployment is described [here](http://charliepark.org/tags-in-jekyll/)
 
 Happy blogging!
