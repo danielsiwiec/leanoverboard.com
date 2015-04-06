@@ -1,5 +1,5 @@
 # Site settings
-title: Blog-Test-Release
+title: "Blog Test Release"
 email: daniel.siwiec@gmail.com
 description: A coding blog...
 baseurl: "" # the subpath of your site, e.g. /blog/

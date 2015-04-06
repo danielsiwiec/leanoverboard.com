@@ -14,10 +14,10 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #C7AF81;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #353232;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -55,4 +55,29 @@ h2.post-title {
 
 ul.tags {
   list-style-type: none;
+}
+
+.tag, .tag:visited {
+  color: #000;
+}
+
+.site-header {
+  background: url("../assets/bg.jpg") 50% 0 no-repeat fixed;
+  // background-size:   cover;
+  min-height: 350px;
+}
+
+.site-title a, .site-title a:visited {
+  color: #fff;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.site-title {
+  text-align: center;
+}
+
+
+.post-list a {
+  color: #000;
 }
