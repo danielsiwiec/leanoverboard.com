@@ -51,9 +51,13 @@ npm install -g gh-deploy
 
 Checkout the demos on YouTube:
 
-<a href="http://youtu.be/vJlg-0y2fTY" target="_blank">Part I - Hello World (19 seconds)</a> (a little outdated - there are no input arguments anymore - the wizard asks about them)
+Part I - Hello World (19 seconds)</a> (a little outdated - there are no input arguments anymore - the wizard asks about them)
 
-<a href="http://youtu.be/5stwAqtgWTg" target="_blank">Part II - Deploy Todo MVC (36 seconds)</a>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/vJlg-0y2fTY" frameborder="0" allowfullscreen></iframe>
+
+Part II - Deploy Todo MVC (36 seconds)
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/5stwAqtgWTg" frameborder="0" allowfullscreen></iframe>
 
 
 ## Resources
