@@ -29,11 +29,11 @@ cd gradle
 
 * Import Gradle project into IntelliJ:
 
-{% img /assets/images/debug-gradle/import.png %}
+<a href='/assets/images/debug-gradle/import.png'><img src='/assets/images/debug-gradle/import.png' height='200' width='320' /></a>
 
 * Edit **Gradle** Run Configuration to point to the project you want to run gradle on:
 
-{% img /assets/images/debug-gradle/config.png %}
+<a href='/assets/images/debug-gradle/config.png'><img src='/assets/images/debug-gradle/config.png' height='200' width='320' /></a>
 
 The **-b** option allows you to pass a path to the build.gradle
 
@@ -41,4 +41,4 @@ The **-b** option allows you to pass a path to the build.gradle
 
 * Hit Debug and wait for your breakpoint:
 
-{% img /assets/images/debug-gradle/debug.png %}
+<a href='/assets/images/debug-gradle/debug.png'><img src='/assets/images/debug-gradle/debug.png' height='200' width='320' /></a>
