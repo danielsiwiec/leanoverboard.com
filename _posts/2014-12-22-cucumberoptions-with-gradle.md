@@ -16,8 +16,18 @@ you have to do some extra magic. When Gradle forks a new process dedicated for t
 test {systemProperties = System.properties}
 {% endhighlight %}
 
-It took me a couple hours to figure it out, so here ya go! If you have multiple test tasks, you can also do it in one stab:
+Now you can use just do:
 
-{% highlight groovy %}tasks.withType(Test) {systemProperties = System.properties}{% endhighlight %}
+{% highlight bash %}
+gradle -Dcucumber.options="..." test
+{% endhighlight %}
 
-For a full working example check out my <a href="https://github.com/danielsiwiec/cucumber-java-skeleton">fork</a> of cucumber-java-skeleton, adding gradle support.
+and the options will be applied properly.
+
+If you have multiple test tasks, you can also do it in one stab:
+
+{% highlight groovy %}
+tasks.withType(Test) {systemProperties = System.properties}
+{% endhighlight %}
+
+For a full working example check out my [fork](https://github.com/danielsiwiec/cucumber-java-skeleton) of cucumber-java-skeleton, adding gradle support.
