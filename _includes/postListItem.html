@@ -2,3 +2,6 @@
 <h2 class="post-title" >
   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </h2>
+{% if forloop.index == 1 %}
+<span class='post-excerpt'>{{ post.content | truncatewords:100 }}</span>
+{% endif %}

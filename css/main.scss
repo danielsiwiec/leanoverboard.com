@@ -51,6 +51,7 @@ $on-laptop:        800px;
 
 h2.post-title {
   margin-top: 5px;
+  text-transform: lowercase;
 }
 
 ul.tags {
@@ -58,7 +59,7 @@ ul.tags {
 }
 
 .tag, .tag:visited {
-  color: #000;
+  color: $text-color;
 }
 
 .site-header {
@@ -80,7 +81,7 @@ ul.tags {
 
 .site-title a:hover {
   text-decoration: none;
-  color: #000;
+  color: $text-color;
 }
 
 .site-subtitle {
@@ -91,9 +92,14 @@ ul.tags {
 }
 
 .post-list a {
-  color: #000;
+  color: $text-color;
 }
 
 .page-link, .page-link:visited {
   color: #fff;
+}
+
+.post-excerpt {
+  color: lighten($text-color, 30%);
+  font-size: 90%;
 }
