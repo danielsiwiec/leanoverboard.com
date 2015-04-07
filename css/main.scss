@@ -59,12 +59,34 @@ h2.post-title {
   text-transform: lowercase;
 }
 
+h1.post-title, .post-meta {
+  text-align: center;
+}
+
+
 ul.tags {
   list-style-type: none;
 }
 
 .tag, .tag:visited {
   color: $text-color;
+}
+
+.category {
+  color: #fff;
+  background-color: #1abc9c;
+  font-style: italic;
+  font-size: 72.5%;
+  font-weight: 600;
+  padding: $small-font-size - 10px;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.category:hover, .category:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-header {

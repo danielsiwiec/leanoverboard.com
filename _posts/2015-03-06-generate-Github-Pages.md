@@ -1,5 +1,6 @@
 ---
 title: 'gh-deploy: One-liner GitHub page spin-up'
+category: programming
 tags:
   - github
   - npm

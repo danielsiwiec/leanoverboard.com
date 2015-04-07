@@ -1,5 +1,6 @@
 ---
 title: 'Debugging Gradle source code in IntelliJ'
+category: programming
 tags:
   - gradle
   - intellij

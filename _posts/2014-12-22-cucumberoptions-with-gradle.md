@@ -1,5 +1,6 @@
 ---
-title: cucumber.options with gradle
+title: cucumber.options with
+category: programming
 tags:
   - cucmber
   - maven

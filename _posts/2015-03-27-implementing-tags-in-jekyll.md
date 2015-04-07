@@ -1,5 +1,6 @@
 ---
 title: 'Implementing tags in Jekyll'
+category: programming
 tags:
   - jekyll
   - javascript

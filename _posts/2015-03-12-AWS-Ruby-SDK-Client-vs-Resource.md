@@ -1,5 +1,6 @@
 ---
 title: 'AWS Ruby SDK v2: Client vs Resource'
+category: programming
 tags:
   - aws
   - amazon

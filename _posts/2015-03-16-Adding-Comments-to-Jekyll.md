@@ -1,5 +1,6 @@
 ---
 title: 'Adding comments capability to your Jekyll blog with Disqus'
+category: programming
 tags:
   - jekyll
   - blog

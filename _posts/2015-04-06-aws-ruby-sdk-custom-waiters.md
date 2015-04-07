@@ -1,12 +1,13 @@
 ---
 title: 'AWS Ruby SDK custom waiters'
+category: programming
 tags:
   - aws
   - amazon
   - ruby
 ---
 
-Waiters is a mechanism of the SDK that allows you to halt code execution until a certain condition is met. Until version **2.0.35** of the SDK, the waiters were implemented as a set of methods on resource (more on resources [here](/2015/03/12/AWS-Ruby-SDK-Client-vs-Resource.html)) classes, with baked in conditions to wait on. In this post, I'll explain how I helped improve the SDK with custom waiters.
+Waiters is a mechanism of the SDK that allows you to halt code execution until a certain condition is met. Until version **2.0.35** of the SDK, the waiters were implemented as a set of methods on resource (more on resources [here](/programming/2015/03/12/AWS-Ruby-SDK-Client-vs-Resource.html)) classes, with baked in conditions to wait on. In this post, I'll explain how I helped improve the SDK with custom waiters.
 
 ### Waiters
 
