@@ -2,7 +2,7 @@
 <h2 class="post-title" >
   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </h2>
-{% if forloop.index == 1 %}
+{% if forloop.index == 1 and show_excerpt %}
 {% capture post_link %}
 <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
 {% endcapture %}
