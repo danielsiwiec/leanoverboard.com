@@ -1,0 +1,7 @@
+<ul class="categories">
+{% for category in site.categories %}
+  {% assign categoryName = category | first %}
+  {% assign postsCount = category | last | size %}
+  <li>{% include category.html %}({{ postsCount }})</li>
+{% endfor %}
+</ul>
