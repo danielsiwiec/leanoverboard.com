@@ -6,5 +6,5 @@
 {% capture post_link %}
 <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
 {% endcapture %}
-<span class='post-excerpt'>{{ post.content | truncatewords:100 | strip_html | append:post_link }}</span>
+<p class='post-excerpt'>{{ post.content | truncatewords:100 | strip_html | append:post_link }}</p>
 {% endif %}

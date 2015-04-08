@@ -145,6 +145,10 @@
     }
 }
 
+.post-content, .post-excerpt {
+    text-align: justify;
+}
+
 .post-content {
     margin-bottom: $spacing-unit;
 
