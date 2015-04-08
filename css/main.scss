@@ -99,7 +99,7 @@ ul.tags, ul.categories {
 
 .site-title {
   text-align: center;
-  margin-top: $heading-height * 0.25;
+  margin-top: $heading-height * 0.4;
 }
 
 .site-title a, .site-title a:visited {
@@ -109,7 +109,7 @@ ul.tags, ul.categories {
   letter-spacing: 5px;
 }
 
-.site-footer a, .site-footer a:visited, .site-footer i {
+.site-footer a, .site-footer a:visited, .site-footer i, .site-nav a, .site-nav a:visited, .site-nav i {
   color: $background-text-color;
 }
 
