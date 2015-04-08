@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /stats/
+title: 'Posting statistics'
 ---
 
 <script type="text/javascript">

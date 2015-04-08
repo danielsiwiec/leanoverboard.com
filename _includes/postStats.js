@@ -37,7 +37,7 @@ function drawChart() {
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
 
   var options = {
-    title: 'Posts/time',
+    title: 'Posts/month',
     legend: {
       position: 'none'
     },
