@@ -1,6 +1,6 @@
 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 <h2 class="post-title" >
-  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><i class='fa fa-angle-right'></i> {{ post.title }}</a>
 </h2>
 {% if forloop.index == 1 and show_excerpt %}
 {% capture post_link %}
