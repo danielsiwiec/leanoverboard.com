@@ -19,6 +19,7 @@ function drawChart() {
   function floorDate(date) {
     var newDate = new Date(date);
     newDate.setDate(1);
+    newDate.setHours(0);
     return newDate;
   }
 
