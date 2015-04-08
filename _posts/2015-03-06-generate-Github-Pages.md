@@ -13,14 +13,13 @@ it much easier, with the introduction of the [GitHub Pages](https://pages.github
 Introducing **gh-deploy**. This module leverages this service and automates the whole setup.
 
 
-## Prerequisites
+### Prerequisites
 
 * github account
 * npm
 
-## How To
 
-# Steps
+### Steps
 
 * Install the gh-deploy module
 {% highlight bash %}
@@ -38,7 +37,7 @@ npm install -g gh-deploy
 
 ![Finish](/assets/images/gh-deploy/finish.png)
 
-# Results
+### Results
 
 * The page deployed and accessible
 
@@ -48,7 +47,7 @@ npm install -g gh-deploy
 
 ![Wizard](/assets/images/gh-deploy/github.png)
 
-## Demos
+### Demos
 
 Checkout the demos on YouTube:
 
@@ -61,7 +60,7 @@ Part II - Deploy Todo MVC (36 seconds)
 <iframe width="420" height="315" src="https://www.youtube.com/embed/5stwAqtgWTg" frameborder="0" allowfullscreen></iframe>
 
 
-## Resources
+### Resources
 
 [gh-deploy on GitHub](https://github.com/danielsiwiec/gh-deploy)
 

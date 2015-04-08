@@ -21,14 +21,14 @@ In this demo, we will solve a simple problem of:
 
 We will accomplish this using the **Client** and **Resource** classes separately, to show the difference in approach.
 
-## Prerequisites
+### Prerequisites
 
 * ruby
 * aws-sdk gem
 * AWS account
 
 
-## Credentials
+### Credentials
 
 Create a **creds.json** file, that looks like this:
 
@@ -53,7 +53,7 @@ creds = Aws::Credentials.new(creds['AccessKeyId'], creds['SecretAccessKey'])
 
 
 
-## Client approach
+### Client approach
 
 We start with creating the ```Client``` instance. Notice the use of previously created ```creds``` object.
 
@@ -83,7 +83,7 @@ ID: i-703f74b8 State: running Hostname: ec2-56-67-20-185.us-west-1.compute.amazo
 ID: i-1c1279d4 State: running Hostname: ec2-56-153-62-149.us-west-1.compute.amazonaws.com
 {% endhighlight %}
 
-## Resource approach
+### Resource approach
 
 First, we create the ```Resource``` instance, in a similar fashion.
 {% highlight ruby%}
@@ -105,7 +105,7 @@ Once we have a collections of instances, we just iterate over them and output th
 As we iterate over ```Instances```, we can also invoke the ```reboot``` method directly on the elements.
 
 
-## Summary
+### Summary
 
 The ```Client``` offers a more procedural approach, which is more intuitive for people accustomed
 to the AWS Command Line Interface. It's undeniable advantage is the ability to perform bulk operations
