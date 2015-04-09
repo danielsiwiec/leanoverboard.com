@@ -7,7 +7,6 @@ layout: default
   <div class='row'>
   <div class='col-sm-8'>
     <ul class="post-list">
-      {% assign show_excerpt = true %}
       {% for post in site.posts %}
         <li>
           {% include postListItem.html %}
@@ -17,11 +16,11 @@ layout: default
   </div>
   <div class='col-sm-3 col-sm-offset-1'>
     <div>
-      <h4>Tags</h4>
+      <h4>tags</h4>
       {% include tagCloud.html %}
     </div>
     <div>
-      <h4>Categories</h4>
+      <h4>categories</h4>
       {% include categoryCloud.html %}
     </div>
   </div>

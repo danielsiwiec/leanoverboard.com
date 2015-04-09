@@ -19,7 +19,6 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background: url("../assets/bg.jpg") no-repeat fixed;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -182,24 +181,5 @@ pre {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $background-text-color;
-        }
     }
 }

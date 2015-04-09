@@ -1,10 +1,8 @@
 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 <h2 class="post-title" >
-  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><i class='fa fa-angle-right'></i> {{ post.title }}</a>
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </h2>
-{% if forloop.index == 1 and show_excerpt %}
 {% capture post_link %}
-<a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+<a href="{{ post.url | prepend: site.baseurl }}"><span class='nowrap'>Read more <i class='fa fa-angle-double-right'></i></span></a>
 {% endcapture %}
 <p class='post-excerpt'>{{ post.content | truncatewords:100 | strip_html | append:post_link }}</p>
-{% endif %}

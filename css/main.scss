@@ -17,10 +17,10 @@ $heading-height: 250px;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #BEB5A4;
+$background-color: #F5F5F5;
 $brand-color:      #2a7ae2;
-$background-text-color: #fff;
-$background-text-hover-color: #000;
+$second-text-color: #0AD29E;
+$second-text-hover-color: #000;
 
 $grey-color:       #353232;
 $grey-color-light: lighten($grey-color, 40%);
@@ -55,8 +55,8 @@ $on-laptop:        800px;
 
 
 h2.post-title {
-  margin-top: 5px;
   text-transform: lowercase;
+  margin-bottom: 5px;
 }
 
 h1.post-title, .post-meta {
@@ -68,13 +68,8 @@ ul.tags, ul.categories {
   list-style-type: none;
 }
 
-.tag, .tag:visited {
-  color: $text-color;
-}
-
 .category {
-  color: #fff;
-  background-color: #1abc9c;
+  background-color: $second-text-color;
   font-style: italic;
   font-size: 72.5%;
   font-weight: 600;
@@ -100,41 +95,46 @@ ul.tags, ul.categories {
 .site-title {
   text-align: center;
   margin-top: $heading-height * 0.4;
+  text-transform: uppercase;
 }
 
 .site-title a, .site-title a:visited {
-  color: $background-text-color;
+  color: $second-text-color;
   font-weight: bold;
   font-size: $heading-font-size;
   letter-spacing: 5px;
 }
 
-.site-footer a, .site-footer a:visited, .site-footer i, .site-nav a, .site-nav a:visited, .site-nav i {
-  color: $background-text-color;
+.site-footer a, .site-footer a:visited,.site-footer i,
+.site-nav a, .site-nav a:visited, .site-nav i,
+.tag, .tag:visited, .post-list a {
+  color: $second-text-color;
+  text-decoration: none;
 }
 
-.site-title a:hover {
+.site-title a:hover, .site-footer a:hover, .site-footer a:hover i,
+.site-nav a:hover i, .tag:hover, .post-list a:hover {
   text-decoration: none;
-  color: $background-text-hover-color;
+  color: $second-text-hover-color;
 }
 
 .site-subtitle {
-  color: $background-text-color;
+  color: $second-text-color;
   letter-spacing: 3px;
   font-size: $heading-font-size * 0.5;
   font-weight: bold;
 }
 
-.post-list a {
-  color: $text-color;
-}
-
 .page-link, .page-link:visited {
-  color: $background-text-color;
+  color: $second-text-color;
 }
 
 .post-excerpt {
   color: lighten($text-color, 30%);
   font-size: 90%;
   font-style: italic;
+}
+
+.nowrap {
+  white-space: nowrap ;
 }
