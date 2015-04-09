@@ -5,4 +5,4 @@
 {% capture post_link %}
 <a href="{{ post.url | prepend: site.baseurl }}"><span class='nowrap'>Read more <i class='fa fa-angle-double-right'></i></span></a>
 {% endcapture %}
-<p class='post-excerpt'>{{ post.content | truncatewords:100 | strip_html | append:post_link }}</p>
+<p class='post-excerpt'>{{ post.content | strip_html | truncatewords:100 | append:post_link }}</p>
