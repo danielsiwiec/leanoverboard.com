@@ -21,6 +21,7 @@ $second-text-color: #0AD29E;
 $second-text-hover-color: #000;
 
 $grey-color:       #353232;
+$grey-color-medium: lighten($grey-color, 20%);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -45,7 +46,7 @@ $on-laptop:        800px;
 
 .post-title, .post-meta {
   text-align: center;
-  color: $grey-color;
+  color: $grey-color-medium;
 }
 
 
