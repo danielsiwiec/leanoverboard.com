@@ -76,6 +76,15 @@ a.category:hover {
   background-color: $background-color;
 }
 
+a, a:visited {
+  color: $second-text-color;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $second-text-hover-color;
+}
+
 .site-title {
   text-align: center;
   margin-top: $heading-height * 0.4;
@@ -88,15 +97,6 @@ a.category:hover {
   letter-spacing: 5px;
 }
 
-a, a:visited {
-  color: $second-text-color;
-}
-
-a:hover {
-  text-decoration: none;
-  color: $second-text-hover-color;
-}
-
 .site-subtitle {
   color: $second-text-color;
   letter-spacing: 3px;
@@ -104,10 +104,17 @@ a:hover {
   font-weight: bold;
 }
 
+.site-quote {
+  font-size: $heading-font-size * 0.32;
+  line-height: 1.1;
+  color: $grey-color-light;
+  text-transform: none;
+  text-align: right;
+}
+
 .post-excerpt {
   color: lighten($text-color, 30%);
   font-size: 90%;
-  font-style: italic;
 }
 
 .side-section {
