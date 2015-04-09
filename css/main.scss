@@ -50,6 +50,7 @@ h1.post-title, .post-meta {
 
 ul.tags, ul.categories {
   list-style-type: none;
+  margin-left: 15px;
 }
 
 .category, .category:visited {
@@ -119,6 +120,13 @@ a:hover {
 
 .side-section {
   font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.about {
+  font-size: 80%;
+  line-height: 1;
+  text-align: justify;
 }
 
 .nowrap {
