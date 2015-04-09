@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
+  <div class='container'>
+    <div class='row'>
+      {% include header.html %}
+    </div>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class='row'>
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
     </div>
 
     {% include analytics.html %}
-
-  </body>
+  </div>
+</body>
 
 </html>
