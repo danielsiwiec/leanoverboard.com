@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 
-
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -18,7 +17,6 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #F5F5F5;
-$brand-color:      #2a7ae2;
 $second-text-color: #0AD29E;
 $second-text-hover-color: #000;
 
@@ -30,14 +28,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -68,8 +58,9 @@ ul.tags, ul.categories {
   list-style-type: none;
 }
 
-.category {
+.category, .category:visited {
   background-color: $second-text-color;
+  color: white;
   font-style: italic;
   font-size: 72.5%;
   font-weight: 600;
@@ -79,9 +70,8 @@ ul.tags, ul.categories {
   text-transform: capitalize;
 }
 
-.category:hover, .category:visited {
-  color: #fff;
-  text-decoration: none;
+a.category:hover {
+  background-color: black;
 }
 
 .site-header {
@@ -98,22 +88,17 @@ ul.tags, ul.categories {
   text-transform: uppercase;
 }
 
-.site-title a, .site-title a:visited {
-  color: $second-text-color;
+.site-title a {
   font-weight: bold;
   font-size: $heading-font-size;
   letter-spacing: 5px;
 }
 
-.site-footer a, .site-footer a:visited,.site-footer i,
-.site-nav a, .site-nav a:visited, .site-nav i,
-.tag, .tag:visited, .post-list a {
+a, a:visited {
   color: $second-text-color;
-  text-decoration: none;
 }
 
-.site-title a:hover, .site-footer a:hover, .site-footer a:hover i,
-.site-nav a:hover i, .tag:hover, .post-list a:hover {
+a:hover {
   text-decoration: none;
   color: $second-text-hover-color;
 }
@@ -123,10 +108,6 @@ ul.tags, ul.categories {
   letter-spacing: 3px;
   font-size: $heading-font-size * 0.5;
   font-weight: bold;
-}
-
-.page-link, .page-link:visited {
-  color: $second-text-color;
 }
 
 .post-excerpt {
