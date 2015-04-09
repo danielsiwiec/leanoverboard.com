@@ -7,9 +7,7 @@ tags:
   - ruby
 ---
 
-Late last year, Amazon [announced](http://ruby.awsblog.com/post/Tx2NJE86FP0HHXX/Announcing-V2-of-the-AWS-SDK-for-Ruby) v2 of AWS Ruby SDK.
-
-Among other features, Amazon added **Resource** and **Client** classes for each of their services.
+Late last year, Amazon [announced](http://ruby.awsblog.com/post/Tx2NJE86FP0HHXX/Announcing-V2-of-the-AWS-SDK-for-Ruby) v2 of AWS Ruby SDK. Among other features, Amazon added **Resource** and **Client** classes for each of their services.
 While being functionally equivalent, they present different paradigms.
 
 The **Client** class serves as a proxy to the API calls, with 1-to-1 method mapping and the more interesting **Resource** class offers an object-oriented interface.

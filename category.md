@@ -3,7 +3,7 @@ layout: page
 permalink: /category/
 ---
 
-<h1>Articles for <span class='category' id='category'></span></h1>
+<h1 class='post-title'>Articles for <span class='category' id='category'></span></h1>
 <ul class="post-list">
   {% for post in site.posts %}
     <li class='post hidden {{ post.category }}'>

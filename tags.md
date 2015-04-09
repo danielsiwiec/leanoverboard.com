@@ -3,7 +3,7 @@ layout: page
 permalink: /tags/
 ---
 
-<h1>Articles for <i class='glyphicon glyphicon-tag'></i> <span id='tagName'></span></h1>
+<h1 class='post-title'>Articles for <i class='glyphicon glyphicon-tag'></i> <span id='tagName'></span></h1>
 <ul class="post-list">
   {% for post in site.posts %}
     <li class='post hidden {{ post.tags | join: " " }}'>
