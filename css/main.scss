@@ -50,7 +50,7 @@ h1.post-title, .post-meta {
 
 ul.tags, ul.categories {
   list-style-type: none;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .category, .category:visited {
@@ -115,22 +115,38 @@ a:hover {
 
 .post-excerpt {
   color: lighten($text-color, 30%);
-  font-size: 90%;
+  // font-size: 90%;
 }
 
 .right-pane {
-  margin-top: 30px;
+  margin-top: 15px;
+  font-size: 90%;
 }
 
 .side-section {
   font-weight: bold;
   margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .about {
-  font-size: 80%;
   line-height: 1;
   text-align: justify;
+}
+
+.contacts li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+  font-size: 120%;
+}
+
+.contacts {
+  margin-left: 0px;
+}
+
+.rss {
+  text-align: right;
 }
 
 .nowrap {
