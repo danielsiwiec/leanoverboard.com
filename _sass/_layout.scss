@@ -8,16 +8,6 @@
 
 
 /**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    background-color: $background-color;
-    padding-bottom: 20px;
-}
-
-
-/**
  * Page content
  */
 .page-content {
@@ -42,7 +32,6 @@
     display: block;
     font-size: 20px;
     text-transform: lowercase;
-    margin-bottom: 5px;
     font-weight: bold;
     line-height: 65%;
     margin-bottom: 20px;
@@ -57,14 +46,10 @@
 }
 
 .post-title {
+    @extend .post-link;
     font-size: 38px;
-    font-weight: 400;
-    letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    margin-bottom: 0px;
 }
 
 .post-content, .post-excerpt {
