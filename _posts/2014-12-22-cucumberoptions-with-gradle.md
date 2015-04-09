@@ -1,5 +1,5 @@
 ---
-title: cucumber.options with
+title: cucumber.options with gradle
 category: programming
 tags:
   - cucmber
