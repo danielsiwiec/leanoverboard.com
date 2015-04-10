@@ -1,0 +1,14 @@
+{% if page.links %}
+<div class='post-links'>
+  <h3>Links</h3>
+  {% for link in page.links %}
+    <a href='{{ link.url }}'>
+    {% if link.name == 'github' %}
+      <i class='fa fa-github'></i>
+    {% else %}
+      <i class='fa fa-link'></i>
+    {% endif %}
+  {{ link.name }}<br></a>
+  {% endfor %}
+</div>
+{% endif %}

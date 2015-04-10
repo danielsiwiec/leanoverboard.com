@@ -6,6 +6,11 @@ tags:
   - npm
   - node
   - coffeescript
+links:
+  - name: github
+    url: 'https://github.com/danielsiwiec/gh-deploy'
+  - name: npmjs
+    url: 'https://www.npmjs.com/package/gh-deploy'
 ---
 
 Sometimes, you just need to host a simple, static HTML page on the web. GitHub makes
@@ -58,11 +63,3 @@ Part I - Hello World (19 seconds)</a> (a little outdated - there are no input ar
 Part II - Deploy Todo MVC (36 seconds)
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/5stwAqtgWTg" frameborder="0" allowfullscreen></iframe>
-
-
-### Resources
-
-[gh-deploy on GitHub](https://github.com/danielsiwiec/gh-deploy)
-
-
-[gh-deploy on npmjs](https://www.npmjs.com/package/gh-deploy)

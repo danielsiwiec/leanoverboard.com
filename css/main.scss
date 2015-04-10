@@ -150,6 +150,16 @@ a:hover {
   text-align: right;
 }
 
+.post-links {
+  float:right;
+  margin-left:20px;
+  margin-right: 10px;
+  border-left: 1px solid $grey-color-medium;
+  border-bottom: 1px solid $grey-color-medium;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
 .nowrap {
   white-space: nowrap ;
 }
