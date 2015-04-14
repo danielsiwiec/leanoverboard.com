@@ -48,8 +48,16 @@ $on-laptop:        800px;
   color: $grey-color-medium;
 }
 
-.post-meta {
+.post-meta, .post-meta .tag, .post-meta .tag:visited {
   color: $grey-color-light;
+}
+
+.post-meta .tag:hover {
+  color: $second-text-hover-color;
+}
+
+.post-meta .category, .post-meta .category:visited {
+  background-color: $grey-color-light;
 }
 
 
@@ -70,7 +78,7 @@ ul.tags, ul.categories {
   text-transform: capitalize;
 }
 
-.category:hover {
+.category:hover, .post-meta .category:hover {
   background-color: black;
 }
 
