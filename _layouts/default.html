@@ -5,15 +5,15 @@
 
 <body>
   <div class='container'>
-    <div class='row'>
+    {% if page.title == index.html %}
       {% include header.html %}
-    </div>
+    {% else %}
+      {% include smallHeader.html %}
+    {% endif %}
 
     <div class='row'>
       <div class="page-content">
-        <div class="wrapper">
           {{ content }}
-        </div>
       </div>
     </div>
 

@@ -1,18 +1,20 @@
-<header class="site-header">
+<div class='row'>
+  <header class="site-header">
 
-  <div class="wrapper site-nav">
+    <div class="site-nav">
 
-    <div class="col-sm-2 col-sm-offset-3">
-      <a href="/stats"><i class="fa fa-bar-chart"></i></a>
+      <div class="col-sm-2 col-sm-offset-3">
+        <a href="/stats"><i class="fa fa-bar-chart"></i></a>
+      </div>
+
     </div>
 
-  </div>
+    <div class='col-xs-6 col-xs-offset-3 site-title'>
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <div class='site-subtitle'>{{ site.description }}</div>
+      <br>
+      <div class='site-quote'>“If you cannot fail, you cannot learn.” ― Eric Ries</div>
+    </div>
 
-  <div class='col-xs-6 col-xs-offset-3 site-title'>
-    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <div class='site-subtitle'>{{ site.description }}</div>
-    <br>
-    <div class='site-quote'>“If you cannot fail, you cannot learn.” ― Eric Ries</div>
-  </div>
-
-</header>
+  </header>
+</div>

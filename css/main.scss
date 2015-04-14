@@ -44,9 +44,12 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-.post-title, .post-meta {
-  text-align: center;
+.post-title {
   color: $grey-color-medium;
+}
+
+.post-meta {
+  color: $grey-color-light;
 }
 
 
@@ -73,10 +76,14 @@ a.category:hover {
 
 .site-header {
   min-height: $heading-height;
+  margin-bottom: $spacing-unit;
 }
 
-.page-content .wrapper {
+.page-content {
   background-color: $background-color;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px $spacing-unit;
 }
 
 a, a:visited {
@@ -98,6 +105,18 @@ a:hover {
   font-weight: bold;
   font-size: $heading-font-size;
   letter-spacing: 5px;
+}
+
+.site-title-small {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+
+.site-title-small a {
+  font-weight: bold;
+  font-size: $heading-font-size / 2;
+  letter-spacing: 2px;
 }
 
 .site-subtitle {
