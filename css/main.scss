@@ -70,7 +70,7 @@ ul.tags, ul.categories {
   text-transform: capitalize;
 }
 
-a.category:hover {
+.category:hover {
   background-color: black;
 }
 
@@ -107,18 +107,6 @@ a:hover {
   letter-spacing: 5px;
 }
 
-.site-title-small {
-  text-align: right;
-  text-transform: uppercase;
-  margin: 10px 0px;
-}
-
-.site-title-small a {
-  font-weight: bold;
-  font-size: $heading-font-size / 2;
-  letter-spacing: 2px;
-}
-
 .site-subtitle {
   color: $second-text-color;
   letter-spacing: 3px;
@@ -132,6 +120,18 @@ a:hover {
   color: $grey-color-light;
   text-transform: none;
   text-align: right;
+}
+
+.site-title-small {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+
+.site-title-small a {
+  font-weight: bold;
+  font-size: $heading-font-size / 2;
+  letter-spacing: 2px;
 }
 
 .post-excerpt {
