@@ -133,7 +133,8 @@ a:hover {
 .site-title-small {
   text-align: right;
   text-transform: uppercase;
-  margin: 10px 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .site-title-small a {
@@ -144,7 +145,6 @@ a:hover {
 
 .post-excerpt {
   color: lighten($text-color, 30%);
-  // font-size: 90%;
 }
 
 .right-pane {
