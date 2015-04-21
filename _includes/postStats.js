@@ -50,6 +50,11 @@ function drawChart() {
       gridlines: {
         color: 'transparent'
       }
+    },
+    animation:{
+      startup: true,
+      duration: 2000,
+      easing: 'out',
     }
   };
 
