@@ -8,9 +8,11 @@ layout: default
     <div class='col-xs-8'>
       <ul class="post-list">
         {% for post in site.posts %}
-        <li>
-          {% include postListItem.html %}
-        </li>
+          {% unless post.draft %}
+          <li>
+            {% include postListItem.html %}
+          </li>
+          {% endunless %}
         {% endfor %}
       </ul>
     </div>

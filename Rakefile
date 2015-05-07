@@ -5,6 +5,7 @@ task :new, [:title] do |t, args|
   File.open(file_name, 'w') {|f| f.write(<<-END
 ---
 title: '#{args['title']}'
+draft: true
 ---
     END
     ) }
