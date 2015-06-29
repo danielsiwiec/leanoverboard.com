@@ -18,6 +18,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    text-align: center;
 }
 
 .post-link {
@@ -41,7 +42,8 @@
     @extend .post-link;
     font-size: 40px;
     line-height: 1;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .post-content, .post-excerpt {
@@ -52,24 +54,25 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+      font-size: 32px;
+      margin-bottom: 5px;
+      padding-bottom: 2px;
+      text-transform: lowercase;
+      font-weight: bold;
+      color: $grey-color-medium;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+      @include media-query($on-laptop) {
+          font-size: 28px;
+      }
     }
 
     h3 {
-        font-size: 20px;
-        margin-bottom: 5px;
-        padding-bottom: 2px;
-        text-transform: lowercase;
-        font-weight: bold;
-        color: $grey-color-medium;
+      @extend h2;
+      font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+      @include media-query($on-laptop) {
+          font-size: 22px;
+      }
     }
 
     h4 {
