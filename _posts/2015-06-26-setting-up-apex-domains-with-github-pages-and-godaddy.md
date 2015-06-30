@@ -44,3 +44,5 @@ Last thing to do, is to add a CNAME file in the root of your GitHub repo, that t
 echo "leanoverboard.com" > CNAME
 git add . && git commit -m "Add CNAME file" && git push
 {% endhighlight %}
+
+After those steps, depending on TTL (time to live) and DNS propagation, it may take some time for page to be available at the new URL.
