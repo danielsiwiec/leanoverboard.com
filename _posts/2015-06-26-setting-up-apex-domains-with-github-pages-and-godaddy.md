@@ -45,4 +45,4 @@ echo "leanoverboard.com" > CNAME
 git add . && git commit -m "Add CNAME file" && git push
 {% endhighlight %}
 
-After those steps, depending on TTL (time to live) and DNS propagation, it may take some time for page to be available at the new URL.
+After those steps, depending on TTL (time to live) and DNS propagation, it may take some time for the page to be available at the new URL.
